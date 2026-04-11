@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seite nicht gefunden – Torsten Strobl</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    // GitHub Pages SPA Redirect
+    // Speichert den aktuellen Pfad und leitet auf index.html weiter
+    var pathSegmentsToKeep = 0;
+    var l = window.location;
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #00A878;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: clamp(5rem, 15vw, 10rem);
+      font-weight: 800;
+      color: #00A878;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #9ca3af;
+      font-size: 1.05rem;
+      max-width: 480px;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #00A878;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.75rem 2rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #008f65; }
+    .divider {
+      width: 3rem;
+      height: 3px;
+      background: #00A878;
+      margin: 0 auto 2rem;
+    }
+  </style>
+</head>
+<body>
+  <p class="badge">Fehler 404</p>
+  <h1>404</h1>
+  <div class="divider"></div>
+  <h2>Seite nicht gefunden</h2>
+  <p>Diese Seite existiert nicht oder wurde verschoben. Sie werden in Kürze automatisch weitergeleitet.</p>
+  <a href="/" class="btn">Zurück zur Startseite</a>
+</body>
+</html>
